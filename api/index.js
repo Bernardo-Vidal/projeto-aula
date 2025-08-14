@@ -11,10 +11,11 @@ import { dirname } from 'path';
 // Converte o caminho do arquivo atual
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-app.use(express.static(__dirname + '/public'))
+app.use(express.static((__dirname.slice(-3, -45)) + '/public'))
 
+console.log((__dirname.slice(-3, -45))  + '/public')
 //importa o arquivo de rotas
-import routes from "./routes/route.js"
+import routes from "../routes/route.js"
 
 app.use(routes)
 
