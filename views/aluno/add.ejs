@@ -1,12 +1,12 @@
 <%-include('../cabecalho.ejs')%>
-    <div><a href="/aluno/lst"></a></div>
 
     <div>
         <form method="post">
             <label for="">Nome:</label>
-            <input type="text" name="nome"><br>
+            <input type="text" name="nome" required><br>
             <label for="">Matrícula:</label>
-            <input type="text" name="matricula">
+            <input type="text" name="matricula" required>
+            <button type="submit">Cadastrar</button>
         </form>
     </div>
 <%-include('../rodape.ejs')%>
