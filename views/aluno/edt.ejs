@@ -1,0 +1,11 @@
+<%-include('../cabecalho.ejs')%>
+    <div>
+        <form method="post">
+            <label for="">Nome:</label>
+            <input type="text" value="<%=Aluno.nome%>" name="nome" required><br>
+            <label for="">Matrícula:</label>
+            <input type="text" value="<%=Aluno.matricula%>" name="matricula" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+<%-include('../rodape.ejs')%>

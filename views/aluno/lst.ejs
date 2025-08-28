@@ -6,11 +6,11 @@
             <td></td>
             <td></td>
         </tr>
-        <% for(const{nome, matricula} of Alunos) {%>
+        <% for(const{id, nome, matricula} of Alunos) {%>
         <tr>
             <td><%=nome%></td>
             <td><%=matricula%></td>
-            <td></td>
+            <td><a href="/aluno/edt/<%=id%>">Editar</a></td>
         </tr>
         <%}%>
     </table>
