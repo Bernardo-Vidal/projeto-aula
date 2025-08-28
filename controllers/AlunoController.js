@@ -10,7 +10,7 @@ export default class AlunoController{
         this.add = async(req,res)=>{
             await Aluno.create({
                 nome: req.body.nome,
-                matricula: req.body.matricula
+                matricula: req.body.matricula,
             })
             res.redirect('/' + caminhoBase + 'add')
         }

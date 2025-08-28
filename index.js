@@ -6,7 +6,7 @@ import alunoRoutes from './routes/AlunoRoutes.js';
 
 const app = express();
 
-app.use(alunoRoutes)
+
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
@@ -19,6 +19,7 @@ app.use(express.static(join(__dirname, '/public')));
 app.set('views', join(__dirname, '/views'));
 
 // Rotas
+app.use(alunoRoutes)
 app.use(routes)
 app.listen(3000)
 // Exporta o handler compatível com Vercel
