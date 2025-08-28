@@ -1,0 +1,18 @@
+<%-include('../cabecalho.ejs')%>
+    <h1>Cursos</h1>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <% for(const{nome, area, anoFundacao, nivel} of Cursos) {%>
+        <tr>
+            <td><%=nome%></td>
+            <td><%=area%></td>
+            <td><%=anoFundacao%></td>
+            <td><%=nivel%></td>
+        </tr>
+        <%}%>
+    </table>
+<%-include('../rodape.ejs')%>
